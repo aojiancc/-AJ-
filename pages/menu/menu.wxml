@@ -1,0 +1,49 @@
+<!--pages/menu/menu.wxml-->
+
+<!--<image src='../images/fl01.png' style='max-height:160px'></image>-->
+
+<swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}"
+    interval="{{interval}}"
+    duration="{{duration}}"
+>
+    <block wx:for="{{imgUrls}}"  wx:for-index="idx">
+        <swiper-item>
+            <image bindtap='swipclick' data-index="{{idx}}"  src="{{item.image}}"      class="slideImage" data-url="{{item.url}}" />
+        </swiper-item>
+    </block>
+</swiper>
+
+
+<view class="menu_container">
+    <view id="vid" bindtap='cmenu' class="menu_item" wx:for="{{menus}}" wx:for-index="idx" wx:for-item="menu">
+        <image class="menu_icon" src="{{menu.url}}" />
+        <text class="menu_name">{{menu.name}}</text>
+    </view>
+</view>
+
+<view class='formconten'>
+  <input name="input"  class='modal-input' placeholder="please input here" />
+  <switch name="switch" style='margin-top:10px'/>
+</view>
+
+  <view >
+    <slider name="slider" show-value ></slider>
+  </view>
+
+  <view>
+  <navigator url="../index/index?title=我是navi">跳转到新的页面</navigator>
+  <button type="defaule" bindtap="clickButton">点下跳转</button>
+  <!--原始颜色，不可点击状态， 正在加载状态
+  <button type="primary" >Primary</button>
+  -->
+  </view>
+
+
+
+
+
+
+
+
+
