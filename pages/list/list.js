@@ -1,4 +1,4 @@
-// pages/list/list.js
+﻿// pages/list/list.js
 
 
 Page({
@@ -42,7 +42,13 @@ Page({
       });
 
   },
+  showDetail:function(event)
+  {
+      console.log("点击了电影啊啊");
+      console.log(event);
 
+
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

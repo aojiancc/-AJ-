@@ -6,9 +6,8 @@
 </view>
 
 
-
   <view class='movelist'>
-    <view class="mvitem" wx:for="{{list}}">
+    <view class="mvitem" bindtap='showDetail' data-mitem="{{item}}" wx:for="{{list}}">
       <view class='myimgview'>
          <image  class='myimg' src="{{item.images.large}}"></image>
       </view>
