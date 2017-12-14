@@ -1,10 +1,11 @@
 {
   "pages": [
-        "pages/list/list",
+    "pages/list/list",
     "pages/search/search",
     "pages/menu/menu",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/detail/detail"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -22,7 +23,7 @@
         "selectedIconPath": "pages/images/indexf2.png"
       },
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/detail/detail",
         "text": "其他",
         "iconPath": "pages/images/image.png",
         "selectedIconPath": "pages/images/imagef.png"

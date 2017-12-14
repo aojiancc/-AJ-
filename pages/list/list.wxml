@@ -2,7 +2,8 @@
 
 
 <view class='title'>
-   <text>即将上映的电影</text>
+   <text>搜索电影</text>
+   <input></input>
 </view>
 
 

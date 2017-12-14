@@ -1,0 +1,23 @@
+<!--pages/detail/detail.wxml-->
+<!-- <text>pages/detail/detail.wxml</text> -->
+
+<!-- <view>
+   <view>
+     <image src='https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2503997609.jpg'></image>
+   </view>
+</view> -->
+
+<view>
+   <view>
+     <image src='https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2507566212.jpg'></image>
+   </view>
+   <view class='introduce'>
+      <text>奇门遁甲</text> 
+       <text>导演:xxx</text> 
+   </view>
+
+
+   <view class="search">
+       <input  bindinput='keyinput'  class='searchinp' placeholder='请输入想要搜索的电影'></input>
+   </view>
+</view>
