@@ -46,8 +46,9 @@
 
 
 
-.title{
+.search{
   /*text-align: center;*/
    display:flex;
-   justify-content:center
-   }
+   margin-left: 22rpx;
+   background: #ffabcd;
+}

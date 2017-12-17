@@ -1,8 +1,8 @@
 <!--pages/list/list.wxml-->
 
 
-<view class='title'>
-   <text>搜索电影</text>
+<view class='search'>
+   <text>搜索电影:</text>
    <input></input>
 </view>
 
