@@ -50,5 +50,12 @@
   /*text-align: center;*/
    display:flex;
    margin-left: 22rpx;
-   background: #ffabcd;
+   margin-top: 10rpx;
 }
+
+.searchinp{
+  margin-left: 10rpx;
+  border-bottom: 1px solid #999;
+  width: 70%;
+}
+

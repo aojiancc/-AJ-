@@ -3,7 +3,7 @@
 
 <view class='search'>
    <text>搜索电影:</text>
-   <input></input>
+   <input bindinput='keyinput' class='searchinp'></input>
 </view>
 
 

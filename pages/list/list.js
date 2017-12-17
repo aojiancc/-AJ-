@@ -1,4 +1,4 @@
-﻿// pages/list/list.js
+// pages/list/list.js
 
 
 Page({
@@ -9,7 +9,15 @@ Page({
   data: {
   
   },
+  keyinput:function(result){
+      // console.log(result);
+      var ivlaue = result.detail.value;
+      console.log(ivlaue);
 
+      //url :https://api.douban.com/v2/movie/in_theaters  /v2/movie/search?q={text}
+
+
+  },
   /**
    * 生命周期函数--监听页面加载
    */
