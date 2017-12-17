@@ -15,7 +15,27 @@ Page({
       console.log(ivlaue);
 
       //url :https://api.douban.com/v2/movie/in_theaters  /v2/movie/search?q={text}
+      //https://api.douban.com/v2/movie/search?q=%E5%A5%87%E9%97%A8%E7%82%96%E9%B8%A1
+    const currentPage = this;
+      wx.request({
+        url: 'https://api.douban.com/v2/movie/search?q=' + ivlaue,
+        header: {
+          //"Content-Type": "application/json"
+          "Content-Type": "application/texts"
+        },
+        success: function (res) {
+          //var data = res.data;
+          console.log('请求成功了....');
+          console.log(res);
 
+          var data = res.data;
+          console.log('请求成功了....');
+          currentPage.setData({
+            list: data.subjects
+          });
+
+        }
+      });
 
   },
   /**
@@ -30,7 +50,7 @@ Page({
       icon: 'loading'
     });
 
-    const currentPage = this
+    const currentPage = this;
       // 在list页面加载时调用api获取数据
       wx.request({
         url: "https://api.douban.com/v2/movie/in_theaters",

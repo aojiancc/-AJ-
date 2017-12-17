@@ -6,7 +6,6 @@
    <input bindinput='keyinput' class='searchinp'></input>
 </view>
 
-
   <view class='movelist'>
     <view class="mvitem" bindtap='showDetail' data-mitem="{{item}}" wx:for="{{list}}">
       <view class='myimgview'>
@@ -19,6 +18,7 @@
       </view>
     </view>
 </view>  
+
 
   
   <!-- <view class='movelist'>

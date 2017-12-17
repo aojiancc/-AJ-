@@ -10,7 +10,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "1.6.4",
 	"appid": "wxd11973c5732fe3f2",
-	"projectname": "learn3",
+	"projectname": "wx_movie",
 	"condition": {
 		"search": {
 			"current": -1,
