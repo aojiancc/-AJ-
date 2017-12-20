@@ -14,8 +14,11 @@ Page({
       var ivlaue = result.detail.value;
       console.log(ivlaue);
 
-      //url :https://api.douban.com/v2/movie/in_theaters  /v2/movie/search?q={text}
-      //https://api.douban.com/v2/movie/search?q=%E5%A5%87%E9%97%A8%E7%82%96%E9%B8%A1
+      wx.showLoading({
+        title: '加载中',
+        icon: 'loading'
+      });
+
     const currentPage = this;
       wx.request({
         url: 'https://api.douban.com/v2/movie/search?q=' + ivlaue,
@@ -34,8 +37,13 @@ Page({
             list: data.subjects
           });
 
+          wx.hideLoading();
+
         }
       });
+
+
+      
 
   },
   /**
